@@ -111,41 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===========================
-    // Countdown Timer (48h loop)
-    // ===========================
-    const countdownEl = document.getElementById('countdown');
-    if (countdownEl) {
-        // Use localStorage to persist across page reloads
-        const TIMER_KEY = 'nc_timer_end';
-        let endTime = localStorage.getItem(TIMER_KEY);
-
-        if (!endTime || parseInt(endTime) < Date.now()) {
-            endTime = Date.now() + 48 * 60 * 60 * 1000;
-            localStorage.setItem(TIMER_KEY, endTime);
-        }
-
-        function updateTimer() {
-            const remaining = Math.max(0, Math.floor((parseInt(endTime) - Date.now()) / 1000));
-
-            if (remaining <= 0) {
-                // Reset timer
-                endTime = Date.now() + 48 * 60 * 60 * 1000;
-                localStorage.setItem(TIMER_KEY, endTime);
-            }
-
-            const h = Math.floor(remaining / 3600);
-            const m = Math.floor((remaining % 3600) / 60);
-            const s = remaining % 60;
-
-            countdownEl.textContent =
-                h.toString().padStart(2, '0') + ':' +
-                m.toString().padStart(2, '0') + ':' +
-                s.toString().padStart(2, '0');
-        }
-
-        updateTimer();
-        setInterval(updateTimer, 1000);
-    }
 });
 
 // ===========================
