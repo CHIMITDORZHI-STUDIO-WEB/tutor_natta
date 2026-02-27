@@ -156,6 +156,43 @@ p {
 }
 
 /* ===========================
+   TOP CONTACT BAR
+   =========================== */
+.top-contact-bar {
+    background: var(--color-text-main);
+    padding: 0.5rem 0;
+    z-index: 100;
+    position: relative;
+}
+
+.top-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.top-contact-link {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s;
+}
+
+.top-contact-link:hover {
+    color: var(--color-accent-gold);
+}
+
+.top-contact-icon {
+    font-size: 0.85rem;
+}
+
+/* ===========================
    NAVIGATION
    =========================== */
 .navbar {
@@ -389,6 +426,25 @@ p {
 .stat-desc {
     font-size: 0.85rem;
     color: var(--color-text-muted);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-actions .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.hero-reg-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
 }
 
 .hero-image-wrapper {
@@ -1066,6 +1122,10 @@ body.dark-mode .btn-outline:hover {
     color: var(--color-bg-base);
 }
 
+body.dark-mode .top-contact-bar {
+    background: #0a0a0a;
+}
+
 body.dark-mode .btn-primary {
     background: var(--color-accent-gold);
     color: #000;
@@ -1127,12 +1187,20 @@ body.dark-mode .font-opt {
    MOBILE OPTIMIZATIONS
    =========================== */
 @media (max-width: 768px) {
-    .timer-text {
-        font-size: 0.75rem;
+    .top-contact-container {
+        gap: 0.8rem;
     }
 
-    .timer-digits {
-        font-size: 0.95rem;
+    .top-contact-link {
+        font-size: 0.7rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        text-align: center;
     }
 
     .theme-panel {
