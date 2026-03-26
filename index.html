@@ -21,12 +21,12 @@
     <div class="theme-panel" id="themePanel">
         <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Настройки темы">⚙️</button>
         <div class="theme-menu" id="themeMenu">
-            <h4>Тема</h4>
+            <h4 data-i18n="theme.theme">Тема</h4>
             <div class="theme-options">
-                <button class="theme-opt active" data-mode="light">☀️ День</button>
-                <button class="theme-opt" data-mode="dark">🌙 Ночь</button>
+                <button class="theme-opt active" data-mode="light" data-i18n="theme.light">☀️ День</button>
+                <button class="theme-opt" data-mode="dark" data-i18n="theme.dark">🌙 Ночь</button>
             </div>
-            <h4>Шрифт заголовков</h4>
+            <h4 data-i18n="theme.font">Шрифт заголовков</h4>
             <div class="font-options">
                 <button class="font-opt active" data-font="playfair">Playfair Display</button>
                 <button class="font-opt" data-font="cormorant">Cormorant (Classic)</button>
@@ -45,19 +45,19 @@
     <div class="top-contact-bar">
         <div class="container top-contact-container">
             <a href="https://max.ru/join/_Xy7Ud-ZTBua3eLKXvxcvv_VcjQ5goIAmB-loGm-mlY" target="_blank" rel="noopener noreferrer" class="top-contact-link">
-                <span class="top-contact-icon">M</span> Канал в Max
+                <span class="top-contact-icon">M</span> <span data-i18n="top.max">Канал в Max</span>
             </a>
             <a href="tel:+79644728111" class="top-contact-link">
                 <span class="top-contact-icon">📞</span> +7 964 472 81 11
             </a>
             <a href="https://vk.ru/nattalitutor" target="_blank" rel="noopener noreferrer" class="top-contact-link">
-                <span class="top-contact-icon">VK</span> ВКонтакте
+                <span class="top-contact-icon">VK</span> <span data-i18n="top.vk">ВКонтакте</span>
             </a>
             <a href="https://t.me/tutor_natta" target="_blank" rel="noopener noreferrer" class="top-contact-link">
                 <span class="top-contact-icon">✈️</span> @tutor_natta
             </a>
             <a href="https://t.me/ewa_natta" target="_blank" rel="noopener noreferrer" class="top-contact-link">
-                <span class="top-contact-icon">📢</span> ТГ канал
+                <span class="top-contact-icon">📢</span> <span data-i18n="top.tg_channel">ТГ канал</span>
             </a>
         </div>
     </div>
@@ -66,7 +66,13 @@
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="#" class="logo">NC.</a>
-            <a href="#contacts" class="btn btn-outline">Связаться</a>
+            <div class="navbar-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="ru">RU</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <a href="#contacts" class="btn btn-outline" data-i18n="nav.contact">Связаться</a>
+            </div>
         </div>
     </nav>
 
@@ -74,31 +80,31 @@
     <section class="hero" id="hero">
         <div class="container hero-container">
             <div class="hero-content fade-in-up">
-                <span class="hero-label">Бизнес-наставник</span>
-                <h1 class="hero-title">Наталья<br><span class="text-gradient">Чиркова</span></h1>
-                <p class="hero-subtitle">Топ-23 компании EWA. <br>Запускаю амбициозных партнёров на высокий доход.</p>
+                <span class="hero-label" data-i18n="hero.label">Бизнес-наставник</span>
+                <h1 class="hero-title" data-i18n-html="hero.title">Наталья<br><span class="text-gradient">Чиркова</span></h1>
+                <p class="hero-subtitle" data-i18n-html="hero.subtitle">Топ-23 компании EWA. <br>Запускаю амбициозных партнёров на высокий доход.</p>
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <span class="stat-num text-gradient">1000+</span>
-                        <span class="stat-desc">Партнеров в команде</span>
+                        <span class="stat-desc" data-i18n="hero.stat1">Партнеров в команде</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="stat-num text-gradient">590к</span>
-                        <span class="stat-desc">Ежемесячный доход</span>
+                        <span class="stat-num text-gradient" data-i18n="hero.stat2_num">590к</span>
+                        <span class="stat-desc" data-i18n="hero.stat2">Ежемесячный доход</span>
                     </div>
                 </div>
                 <div class="hero-actions">
-                    <a href="https://ewaproduct.com/by_partner?ref_id=P0g8i3Sz" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
+                    <a href="https://ewaproduct.com/by_partner?ref_id=P0g8i3Sz" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow" data-i18n="hero.cta1">
                         Начать бесплатно
                     </a>
-                    <a href="https://ewaproduct.com/shop?purchase_ref_id=193111" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <a href="https://ewaproduct.com/shop?purchase_ref_id=193111" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="hero.cta2">
                         Каталог продукции
                     </a>
-                    <a href="https://ewaproduct.com/by_client?referer_token=djQ58fKd" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <a href="https://ewaproduct.com/by_client?referer_token=djQ58fKd" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="hero.cta3">
                         Регистрация клиента
                     </a>
                 </div>
-                <p class="hero-reg-note">Регистрация бесплатная — начните обучаться профессии сетевой предприниматель уже сейчас</p>
+                <p class="hero-reg-note" data-i18n="hero.reg_note">Регистрация бесплатная — начните обучаться профессии сетевой предприниматель уже сейчас</p>
             </div>
             <div class="hero-image-wrapper fade-in-up delay-200">
                 <div class="image-frame">
@@ -112,7 +118,7 @@
     <!-- Target Audience -->
     <section class="audience" id="audience">
         <div class="container">
-            <h2 class="section-title text-center fade-in-up">Для кого эта система?</h2>
+            <h2 class="section-title text-center fade-in-up" data-i18n="audience.title">Для кого эта система?</h2>
             <div class="audience-grid">
                 <div class="glass-card audience-card fade-in-up delay-100">
                     <div class="audience-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none"
@@ -122,8 +128,8 @@
                             <path d="M12 14s-3-2-3-5" />
                             <path d="M12 14s3-2 3-5" />
                         </svg></div>
-                    <h3>Мамы в декрете</h3>
-                    <p>Для тех, кто хочет реализоваться и зарабатывать, не отрываясь от семьи и воспитания детей.</p>
+                    <h3 data-i18n="audience.card1_title">Мамы в декрете</h3>
+                    <p data-i18n="audience.card1_text">Для тех, кто хочет реализоваться и зарабатывать, не отрываясь от семьи и воспитания детей.</p>
                 </div>
                 <div class="glass-card audience-card fade-in-up delay-200">
                     <div class="audience-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none"
@@ -133,8 +139,8 @@
                             <path d="M12 12v4" />
                             <path d="M2 12h20" />
                         </svg></div>
-                    <h3>Предприниматели</h3>
-                    <p>Для тех, кто ищет новые ниши с высокой маржинальностью и без рисков традиционного бизнеса.</p>
+                    <h3 data-i18n="audience.card2_title">Предприниматели</h3>
+                    <p data-i18n="audience.card2_text">Для тех, кто ищет новые ниши с высокой маржинальностью и без рисков традиционного бизнеса.</p>
                 </div>
                 <div class="glass-card audience-card fade-in-up delay-300">
                     <div class="audience-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none"
@@ -143,8 +149,8 @@
                             <path d="M2 17l10 5 10-5" />
                             <path d="M2 12l10 5 10-5" />
                         </svg></div>
-                    <h3>Найм и Фриланс</h3>
-                    <p>Для тех, кто устал от потолка в доходах и хочет построить свой независимый источник прибыли.</p>
+                    <h3 data-i18n="audience.card3_title">Найм и Фриланс</h3>
+                    <p data-i18n="audience.card3_text">Для тех, кто устал от потолка в доходах и хочет построить свой независимый источник прибыли.</p>
                 </div>
             </div>
         </div>
@@ -154,13 +160,13 @@
     <section class="values" id="values">
         <div class="container">
             <div class="values-banner fade-in-up">
-                <h2 class="values-title">Ценности Команды</h2>
+                <h2 class="values-title" data-i18n="values.title">Ценности Команды</h2>
                 <div class="values-list">
-                    <div class="value-item"><span class="value-icon">I</span> <span>Экологичность</span></div>
-                    <div class="value-item"><span class="value-icon">II</span> <span>Честность</span></div>
-                    <div class="value-item"><span class="value-icon">III</span> <span>Драйв</span></div>
+                    <div class="value-item"><span class="value-icon">I</span> <span data-i18n="values.v1">Экологичность</span></div>
+                    <div class="value-item"><span class="value-icon">II</span> <span data-i18n="values.v2">Честность</span></div>
+                    <div class="value-item"><span class="value-icon">III</span> <span data-i18n="values.v3">Драйв</span></div>
                 </div>
-                <p class="values-desc">Мы не «впариваем» и не спамим. Мы строим бизнес красиво.</p>
+                <p class="values-desc" data-i18n="values.desc">Мы не «впариваем» и не спамим. Мы строим бизнес красиво.</p>
             </div>
         </div>
     </section>
@@ -170,11 +176,11 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content fade-in-up">
-                    <h2 class="section-title">Обо мне</h2>
-                    <p class="lead-text">Я — ТОП-лидер компании. Вхожу в 100 лучших контрактов. ТОП-23 в рейтинге.</p>
-                    <p>Я построила команду с нуля и создала собственную авторскую методику рекрутинга и продаж, которая
+                    <h2 class="section-title" data-i18n="about.title">Обо мне</h2>
+                    <p class="lead-text" data-i18n="about.lead">Я — ТОП-лидер компании. Вхожу в 100 лучших контрактов. ТОП-23 в рейтинге.</p>
+                    <p data-i18n="about.p1">Я построила команду с нуля и создала собственную авторскую методику рекрутинга и продаж, которая
                         даёт быстрые и измеримые результаты.</p>
-                    <p>Не имеет значения из какого вы города, есть ли у вас опыт или сколько вам лет. Важно только одно
+                    <p data-i18n="about.p2">Не имеет значения из какого вы города, есть ли у вас опыт или сколько вам лет. Важно только одно
                         — ваше желание зарабатывать.</p>
                 </div>
             </div>
@@ -184,30 +190,30 @@
     <!-- Success Timeline -->
     <section class="timeline-section" id="timeline">
         <div class="container">
-            <h2 class="section-title text-center fade-in-up">История Успеха</h2>
+            <h2 class="section-title text-center fade-in-up" data-i18n="timeline.title">История Успеха</h2>
             <div class="timeline">
                 <div class="timeline-item left fade-in-up">
                     <div class="timeline-content">
                         <h3>2023</h3>
-                        <p>Приход в компанию EWA. Без опыта.</p>
+                        <p data-i18n="timeline.y2023">Приход в компанию EWA. Без опыта.</p>
                     </div>
                 </div>
                 <div class="timeline-item right fade-in-up delay-100">
                     <div class="timeline-content">
                         <h3>2024</h3>
-                        <p>Вход в ТОП-100 контрактов компании. Первые чеки более 100 000₽.</p>
+                        <p data-i18n="timeline.y2024">Вход в ТОП-100 контрактов компании. Первые чеки более 100 000₽.</p>
                     </div>
                 </div>
                 <div class="timeline-item left fade-in-up delay-200">
                     <div class="timeline-content">
                         <h3>2025</h3>
-                        <p>ТОП-23 рейтинга. Создание авторской системы обучения.</p>
+                        <p data-i18n="timeline.y2025">ТОП-23 рейтинга. Создание авторской системы обучения.</p>
                     </div>
                 </div>
                 <div class="timeline-item right fade-in-up delay-300">
                     <div class="timeline-content">
-                        <h3>Сегодня</h3>
-                        <p>Команда 1000+ человек. Max чек 590 000₽. Выводим лидеров на результат.</p>
+                        <h3 data-i18n="timeline.today">Сегодня</h3>
+                        <p data-i18n="timeline.today_text">Команда 1000+ человек. Max чек 590 000₽. Выводим лидеров на результат.</p>
                     </div>
                 </div>
             </div>
@@ -217,37 +223,37 @@
     <!-- Methodology Section -->
     <section class="methodology" id="methodology">
         <div class="container">
-            <h2 class="section-title text-center fade-in-up">Что вы получаете, <br>работая со мной</h2>
+            <h2 class="section-title text-center fade-in-up" data-i18n-html="method.title">Что вы получаете, <br>работая со мной</h2>
             <div class="benefits-grid">
                 <div class="glass-card fade-in-up delay-100">
                     <div class="card-icon">01</div>
-                    <h3>Система</h3>
-                    <p>Полностью упакованная система работы под ключ.</p>
+                    <h3 data-i18n="method.c1_title">Система</h3>
+                    <p data-i18n="method.c1_text">Полностью упакованная система работы под ключ.</p>
                 </div>
                 <div class="glass-card fade-in-up delay-200">
                     <div class="card-icon">02</div>
-                    <h3>Стратегия</h3>
-                    <p>Пошаговая стратегия роста и масштабирования.</p>
+                    <h3 data-i18n="method.c2_title">Стратегия</h3>
+                    <p data-i18n="method.c2_text">Пошаговая стратегия роста и масштабирования.</p>
                 </div>
                 <div class="glass-card fade-in-up delay-300">
                     <div class="card-icon">03</div>
-                    <h3>Инструменты</h3>
-                    <p>Готовые инструменты рекрутинга и продаж.</p>
+                    <h3 data-i18n="method.c3_title">Инструменты</h3>
+                    <p data-i18n="method.c3_text">Готовые инструменты рекрутинга и продаж.</p>
                 </div>
                 <div class="glass-card fade-in-up delay-400">
                     <div class="card-icon">04</div>
-                    <h3>План</h3>
-                    <p>Чёткий план выхода на желаемый уровень дохода.</p>
+                    <h3 data-i18n="method.c4_title">План</h3>
+                    <p data-i18n="method.c4_text">Чёткий план выхода на желаемый уровень дохода.</p>
                 </div>
                 <div class="glass-card fade-in-up delay-500">
                     <div class="card-icon">05</div>
-                    <h3>Поддержка</h3>
-                    <p>Личное сопровождение и поддержка на всех этапах.</p>
+                    <h3 data-i18n="method.c5_title">Поддержка</h3>
+                    <p data-i18n="method.c5_text">Личное сопровождение и поддержка на всех этапах.</p>
                 </div>
                 <div class="glass-card highlight fade-in-up delay-600">
                     <div class="card-icon">AI</div>
-                    <h3>Чат-бот</h3>
-                    <p>Автоматический помощник, который отвечает на вопросы 24/7.</p>
+                    <h3 data-i18n="method.c6_title">Чат-бот</h3>
+                    <p data-i18n="method.c6_text">Автоматический помощник, который отвечает на вопросы 24/7.</p>
                 </div>
             </div>
         </div>
@@ -258,9 +264,9 @@
         <div class="container">
             <div class="glass-card quiz-card fade-in-up">
                 <div id="quiz-start">
-                    <h2 class="text-center">Тест: Подходит ли вам сетевой бизнес?</h2>
-                    <p class="text-center">Пройдите короткий тест и получите персональную стратегию.</p>
-                    <button class="btn btn-primary btn-center" onclick="startQuiz()">Начать тест</button>
+                    <h2 class="text-center" data-i18n="quiz.title">Тест: Подходит ли вам сетевой бизнес?</h2>
+                    <p class="text-center" data-i18n="quiz.desc">Пройдите короткий тест и получите персональную стратегию.</p>
+                    <button class="btn btn-primary btn-center" onclick="startQuiz()" data-i18n="quiz.start">Начать тест</button>
                 </div>
                 <div id="quiz-game" style="display: none;">
                     <div class="quiz-progress" id="quiz-progress"></div>
@@ -269,9 +275,9 @@
                 </div>
                 <div id="quiz-result" style="display: none; text-align: center;">
                     <div class="quiz-result-icon">🎉</div>
-                    <h3>У вас отличный потенциал!</h3>
-                    <p>Моя система идеально вам подойдёт. Давайте обсудим ваш персональный план.</p>
-                    <a href="#contacts" class="btn btn-primary">Получить стратегию</a>
+                    <h3 data-i18n="quiz.result_title">У вас отличный потенциал!</h3>
+                    <p data-i18n="quiz.result_text">Моя система идеально вам подойдёт. Давайте обсудим ваш персональный план.</p>
+                    <a href="#contacts" class="btn btn-primary" data-i18n="quiz.result_cta">Получить стратегию</a>
                 </div>
             </div>
         </div>
@@ -281,14 +287,14 @@
     <section class="philosophy" id="philosophy">
         <div class="container philosophy-container">
             <div class="philosophy-text fade-in-up">
-                <h2 class="section-title white">Философия<br><span class="text-gradient-gold">Результата</span></h2>
+                <h2 class="section-title white" data-i18n-html="philosophy.title">Философия<br><span class="text-gradient-gold">Результата</span></h2>
                 <div class="quote-block">
-                    <p>«Моя система построена на практике, цифрах и реальных кейсах. Вы не будете разбираться сами — вы
+                    <p data-i18n="philosophy.quote">«Моя система построена на практике, цифрах и реальных кейсах. Вы не будете разбираться сами — вы
                         получите конкретные действия.»</p>
                 </div>
-                <p class="philosophy-desc">Настройтесь получить новую профессию, новые знания и сразу применять их на
+                <p class="philosophy-desc" data-i18n="philosophy.desc">Настройтесь получить новую профессию, новые знания и сразу применять их на
                     практике. Используя готовую систему, вы сможете выйти на стабильный доход.</p>
-                <a href="#contacts" class="btn btn-primary btn-glow">Начать путь</a>
+                <a href="#contacts" class="btn btn-primary btn-glow" data-i18n="philosophy.cta">Начать путь</a>
             </div>
         </div>
     </section>
@@ -297,13 +303,13 @@
     <section class="not-for-you" id="not-for-you">
         <div class="container">
             <div class="warning-block fade-in-up">
-                <h2>⛔ Кому это НЕ подходит</h2>
+                <h2 data-i18n="warning.title">⛔ Кому это НЕ подходит</h2>
                 <ul class="warning-list">
-                    <li>❌ Тем, кто ищет «волшебную таблетку» и лёгкие деньги.</li>
-                    <li>❌ Тем, кто не готов учиться и менять мышление.</li>
-                    <li>❌ Тем, кто любит ныть и обвинять обстоятельства.</li>
+                    <li data-i18n="warning.li1">❌ Тем, кто ищет «волшебную таблетку» и лёгкие деньги.</li>
+                    <li data-i18n="warning.li2">❌ Тем, кто не готов учиться и менять мышление.</li>
+                    <li data-i18n="warning.li3">❌ Тем, кто любит ныть и обвинять обстоятельства.</li>
                 </ul>
-                <p class="warning-footer">Если это про вас — пожалуйста, закройте этот сайт. Мы работаем только с
+                <p class="warning-footer" data-i18n="warning.footer">Если это про вас — пожалуйста, закройте этот сайт. Мы работаем только с
                     лидерами.</p>
             </div>
         </div>
@@ -312,25 +318,25 @@
     <!-- Blog Section -->
     <section class="blog" id="blog">
         <div class="container">
-            <h2 class="section-title text-center fade-in-up">Полезные статьи</h2>
+            <h2 class="section-title text-center fade-in-up" data-i18n="blog.title">Полезные статьи</h2>
             <div class="blog-grid">
                 <div class="glass-card blog-card fade-in-up delay-100">
-                    <div class="blog-tag">Мышление</div>
-                    <h3>Как перестать бояться продаж?</h3>
-                    <p>5 техник, которые перевернут ваше представление о бизнесе.</p>
-                    <a href="#" class="read-more">Читать статью &rarr;</a>
+                    <div class="blog-tag" data-i18n="blog.tag1">Мышление</div>
+                    <h3 data-i18n="blog.c1_title">Как перестать бояться продаж?</h3>
+                    <p data-i18n="blog.c1_text">5 техник, которые перевернут ваше представление о бизнесе.</p>
+                    <a href="#" class="read-more" data-i18n="blog.read_more">Читать статью &rarr;</a>
                 </div>
                 <div class="glass-card blog-card fade-in-up delay-200">
                     <div class="blog-tag">EWA Product</div>
-                    <h3>Топ-5 ошибок новичка</h3>
-                    <p>Почему 90% уходят в первый месяц и как попасть в те самые 10% успешных.</p>
-                    <a href="#" class="read-more">Читать статью &rarr;</a>
+                    <h3 data-i18n="blog.c2_title">Топ-5 ошибок новичка</h3>
+                    <p data-i18n="blog.c2_text">Почему 90% уходят в первый месяц и как попасть в те самые 10% успешных.</p>
+                    <a href="#" class="read-more" data-i18n="blog.read_more">Читать статью &rarr;</a>
                 </div>
                 <div class="glass-card blog-card fade-in-up delay-300">
-                    <div class="blog-tag">Система</div>
-                    <h3>Секрет быстрого старта</h3>
-                    <p>Пошаговый план выхода на первые 50 000₽ за 2 недели.</p>
-                    <a href="#" class="read-more">Читать статью &rarr;</a>
+                    <div class="blog-tag" data-i18n="blog.tag3">Система</div>
+                    <h3 data-i18n="blog.c3_title">Секрет быстрого старта</h3>
+                    <p data-i18n="blog.c3_text">Пошаговый план выхода на первые 50 000₽ за 2 недели.</p>
+                    <a href="#" class="read-more" data-i18n="blog.read_more">Читать статью &rarr;</a>
                 </div>
             </div>
         </div>
@@ -339,35 +345,35 @@
     <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <h2 class="section-title text-center fade-in-up">Частые вопросы</h2>
+            <h2 class="section-title text-center fade-in-up" data-i18n="faq.title">Частые вопросы</h2>
             <div class="faq-list fade-in-up">
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Это финансовая пирамида?</button>
+                    <button class="faq-question" aria-expanded="false" data-i18n="faq.q1">Это финансовая пирамида?</button>
                     <div class="faq-answer">
-                        <p>Нет, EWA Product — это официальная продуктовая компания с реальным физическим продуктом,
+                        <p data-i18n="faq.a1">Нет, EWA Product — это официальная продуктовая компания с реальным физическим продуктом,
                             сертификацией и прозрачной системой выплат. Пирамиды зарабатывают на взносах, мы — на
                             товарообороте.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Нужно ли увольняться с работы?</button>
+                    <button class="faq-question" aria-expanded="false" data-i18n="faq.q2">Нужно ли увольняться с работы?</button>
                     <div class="faq-answer">
-                        <p>Нет, на старте вы можете совмещать. Достаточно уделять бизнесу 2-3 часа в день. Когда доход
+                        <p data-i18n="faq.a2">Нет, на старте вы можете совмещать. Достаточно уделять бизнесу 2-3 часа в день. Когда доход
                             от EWA превысит вашу зарплату, вы сами примете решение.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">У меня нет опыта в продажах. Получится?</button>
+                    <button class="faq-question" aria-expanded="false" data-i18n="faq.q3">У меня нет опыта в продажах. Получится?</button>
                     <div class="faq-answer">
-                        <p>Конечно. Наша система обучения построена так, что даже новичок начинает получать результат в
+                        <p data-i18n="faq.a3">Конечно. Наша система обучения построена так, что даже новичок начинает получать результат в
                             первую неделю. Мы даём скрипты, шаблоны и инструменты.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Сколько нужно времени, чтобы выйти на
+                    <button class="faq-question" aria-expanded="false" data-i18n="faq.q4">Сколько нужно времени, чтобы выйти на
                         доход?</button>
                     <div class="faq-answer">
-                        <p>Всё индивидуально. В среднем мои партнёры выходят на 30-50 тысяч рублей уже на 2-й месяц
+                        <p data-i18n="faq.a4">Всё индивидуально. В среднем мои партнёры выходят на 30-50 тысяч рублей уже на 2-й месяц
                             активной работы по системе.</p>
                     </div>
                 </div>
@@ -378,38 +384,38 @@
     <!-- Contacts Section -->
     <section class="contacts" id="contacts">
         <div class="container">
-            <h2 class="section-title text-center">Свяжитесь со мной</h2>
-            <p class="text-center contact-subtitle">Если вы готовы выйти на новый уровень дохода и мышления — я покажу
+            <h2 class="section-title text-center" data-i18n="contacts.title">Свяжитесь со мной</h2>
+            <p class="text-center contact-subtitle" data-i18n="contacts.subtitle">Если вы готовы выйти на новый уровень дохода и мышления — я покажу
                 вам, как сделать это быстрее.</p>
             <div class="contacts-wrapper">
                 <a href="https://max.ru/join/_Xy7Ud-ZTBua3eLKXvxcvv_VcjQ5goIAmB-loGm-mlY" target="_blank"
                     rel="noopener noreferrer" class="contact-card fade-in-up delay-100">
                     <div class="icon">M</div>
-                    <div class="label">Канал в Max</div>
-                    <div class="link-text">Присоединиться</div>
+                    <div class="label" data-i18n="contacts.max_label">Канал в Max</div>
+                    <div class="link-text" data-i18n="contacts.max_text">Присоединиться</div>
                 </a>
                 <a href="tel:+79644728111" class="contact-card fade-in-up delay-200">
                     <div class="icon">📞</div>
-                    <div class="label">Телефон</div>
+                    <div class="label" data-i18n="contacts.phone_label">Телефон</div>
                     <div class="link-text">+7 964 472 81 11</div>
                 </a>
                 <a href="https://vk.ru/nattalitutor" target="_blank" rel="noopener noreferrer"
                     class="contact-card fade-in-up delay-300">
                     <div class="icon">VK</div>
-                    <div class="label">ВКонтакте</div>
-                    <div class="link-text">Мой профиль</div>
+                    <div class="label" data-i18n="contacts.vk_label">ВКонтакте</div>
+                    <div class="link-text" data-i18n="contacts.vk_text">Мой профиль</div>
                 </a>
                 <a href="https://t.me/tutor_natta" target="_blank" rel="noopener noreferrer"
                     class="contact-card fade-in-up delay-400">
                     <div class="icon">✈️</div>
-                    <div class="label">Личный Telegram</div>
+                    <div class="label" data-i18n="contacts.tg_label">Личный Telegram</div>
                     <div class="link-text">@tutor_natta</div>
                 </a>
                 <a href="https://t.me/ewa_natta" target="_blank" rel="noopener noreferrer"
                     class="contact-card fade-in-up delay-500">
                     <div class="icon">📢</div>
-                    <div class="label">Telegram Канал</div>
-                    <div class="link-text">Новости и кейсы</div>
+                    <div class="label" data-i18n="contacts.tg_channel_label">Telegram Канал</div>
+                    <div class="link-text" data-i18n="contacts.tg_channel_text">Новости и кейсы</div>
                 </a>
             </div>
         </div>
@@ -418,10 +424,11 @@
     <footer>
         <div class="container footer-content">
             <span class="logo-small">NC.</span>
-            <p>&copy; 2026 Наталья Чиркова. Все права защищены.</p>
+            <p data-i18n="footer.copy">&copy; 2026 Наталья Чиркова. Все права защищены.</p>
         </div>
     </footer>
 
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 
