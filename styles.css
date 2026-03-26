@@ -169,10 +169,11 @@ p {
    TOP CONTACT BAR
    =========================== */
 .top-contact-bar {
-    background: var(--color-text-main);
-    padding: 0.5rem 0;
+    background: transparent;
+    padding: 0.6rem 0;
     z-index: 100;
     position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .top-contact-container {
@@ -184,14 +185,15 @@ p {
 }
 
 .top-contact-link {
-    color: var(--color-text-light);
+    color: var(--color-text-muted);
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 400;
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
     transition: color 0.3s;
+    letter-spacing: 0.02em;
 }
 
 .top-contact-link:hover {
@@ -199,7 +201,9 @@ p {
 }
 
 .top-contact-icon {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    color: var(--color-accent-gold);
+    opacity: 0.7;
 }
 
 /* ===========================
@@ -1180,7 +1184,8 @@ body.dark-mode .btn-outline:hover {
 }
 
 body.dark-mode .top-contact-bar {
-    background: #0a0a0a;
+    background: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
 body.dark-mode .btn-primary {
