@@ -232,6 +232,53 @@ p {
     color: var(--color-accent-gold);
 }
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: transparent;
+    border: 1px solid var(--color-text-main);
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
+
+.lang-option {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-family: var(--font-sans);
+    color: var(--color-text-main);
+    transition: 0.3s;
+    line-height: 1;
+}
+
+.lang-option.active {
+    background: var(--color-text-main);
+    color: var(--color-bg-base);
+}
+
+.lang-option:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .lang-toggle {
+    border-color: var(--color-text-main);
+}
+
+body.dark-mode .lang-option.active {
+    background: var(--color-accent-gold);
+    color: #000;
+}
+
 .logo-small {
     display: block;
     margin-bottom: 1rem;
