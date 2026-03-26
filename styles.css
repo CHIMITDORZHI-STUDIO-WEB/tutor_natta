@@ -242,41 +242,41 @@ p {
     display: flex;
     align-items: center;
     gap: 0;
-    background: transparent;
-    border: 1px solid var(--color-text-main);
-    border-radius: 50px;
-    overflow: hidden;
+    background: none;
+    border: none;
     cursor: pointer;
     padding: 0;
+    font-family: var(--font-sans);
 }
 
 .lang-option {
-    padding: 0.4rem 0.7rem;
+    padding: 0.35rem 0.5rem;
     font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-weight: 500;
+    letter-spacing: 0.08em;
     font-family: var(--font-sans);
-    color: var(--color-text-main);
-    transition: 0.3s;
+    color: var(--color-text-muted);
+    transition: color 0.3s, border-color 0.3s;
     line-height: 1;
+    border-bottom: 1.5px solid transparent;
 }
 
 .lang-option.active {
-    background: var(--color-text-main);
-    color: var(--color-bg-base);
+    color: var(--color-accent-gold);
+    border-bottom-color: var(--color-accent-gold);
+    font-weight: 600;
 }
 
 .lang-option:hover:not(.active) {
-    background: rgba(0, 0, 0, 0.05);
+    color: var(--color-text-main);
 }
 
-body.dark-mode .lang-toggle {
-    border-color: var(--color-text-main);
-}
-
-body.dark-mode .lang-option.active {
-    background: var(--color-accent-gold);
-    color: #000;
+.lang-separator {
+    color: var(--color-text-muted);
+    font-size: 0.65rem;
+    opacity: 0.4;
+    margin: 0 0.1rem;
+    user-select: none;
 }
 
 .logo-small {
